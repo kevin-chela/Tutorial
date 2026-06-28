@@ -90,4 +90,6 @@ git push -u origin main
 moving file to a directory -  mv Features.png File2 References
 Pratical Git Branch
 
-After stash
+After stash - loose data - sticky notes
+--verbose - details
+
