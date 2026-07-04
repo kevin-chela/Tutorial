@@ -90,6 +90,22 @@ git push -u origin main
 moving file to a directory -  mv Features.png File2 References
 Pratical Git Branch
 
-After stash - loose data - sticky notes
+Review Git stash - sticky notes
 --verbose - details
 
+Git stash
+
+rm -fr ".git/rebase-merge"
+
+git checkout -b Test
+git push -u origin Test
+
+git branch -d Test Delete local branch
+git push origin --delete Test Delete remote branch
+git branch -r List remote branches
+git branchList local branches
+
+branch allows developers to work on features bugs and experiments without affecting the main code base
+
+Best practice going forward:
+Always commit or stash before switching branches — keeps your changes tied to the right branch and avoids confusion.
