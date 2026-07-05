@@ -109,3 +109,15 @@ branch allows developers to work on features bugs and experiments without affect
 
 Best practice going forward:
 Always commit or stash before switching branches — keeps your changes tied to the right branch and avoids confusion.
+
+Terms
+Fast Forward Merge
+Squash
+
+git merge --abort
+
+Git Rebase
+Comparison main and feature branch
+git rebase -i HEAD~3 - squash
+
+Fork
