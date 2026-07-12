@@ -110,8 +110,35 @@ branch allows developers to work on features bugs and experiments without affect
 Best practice going forward:
 Always commit or stash before switching branches — keeps your changes tied to the right branch and avoids confusion.
 
+git stash save "<Stashing Message>" 
+
+git reset –hard - dont keep your changes
+git reset –soft - move HEAD to prevoius commit while keeps your changes
+git reset --mixed 
+
+git revert HEAD~3
+git reset HEAD~
+
+git reset -hard HEAD~
+git reset -soft HEAD^
+
+git reflog
+
+git reset - undo commits locally
+git revert - new commit that reverses previous changes keeps history
+git checkout -filename - restore files in working directory to last committed state
+
+git reset file_name - unstage a file
+git add-p stages interactively
+git clean -f-d
+git clean -f-x
+git clean-i
+
+git tracks only files not directories
+
+
 Terms
-Fast Forward Merge
+Fast Forward Merge ???
 Squash
 
 git merge --abort
@@ -121,3 +148,21 @@ Comparison main and feature branch
 git rebase -i HEAD~3 - squash
 
 Fork
+
+Recover Commits
+git reflog
+git cherry-pick <commithash>
+
+shell command
+git submodule add <file>
+git tag
+git tag -a {name} -m"message"
+
+git hooks - streamline development process e.g coding standards, running tests, generting documentation, sending notifications
+
+Linux Practical
+find notes.md
+cat notes.md
+rm notes.md
+
+mv feature.txt tester.txt GitTutorial
