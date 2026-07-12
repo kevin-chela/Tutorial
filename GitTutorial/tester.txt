@@ -1,2 +1,2 @@
-Tester details - I am Tester Branch
+Tester details - I am From Tester Branch
    1. App Testing

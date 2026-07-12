@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Running pre-commit hook..."
+
+# Check for debugging statements, excluding hooks folder
+if git diff --cached -- ':!GitTutorial/GitHooks/hooks/*' | grep -E "console\.log|debugger"; then
+    echo "ERROR: Remove debug statements before committing"
+    exit 1
+fi
+
+echo "Pre-commit passed!"
+exit 0

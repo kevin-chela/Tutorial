@@ -166,3 +166,11 @@ cat notes.md
 rm notes.md
 
 mv feature.txt tester.txt GitTutorial
+
+Redhat Automation
+
+Next Phase GitHooks
+
+mkdir -p GitHooks/hooks ?? -p
+usage of cat
+chmod +x GitTutorial/GitHooks/hooks/*

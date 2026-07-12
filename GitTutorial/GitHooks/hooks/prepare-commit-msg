@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Running prepare-commit-msg hook..."
+
+COMMIT_MSG_FILE=$1
+BRANCH_NAME=$(git branch --show-current)
+
+# Prepend branch name to commit message
+sed -i "1s/^/[$BRANCH_NAME] /" "$COMMIT_MSG_FILE"
+
+echo "Commit message prepared!"
+exit 0
