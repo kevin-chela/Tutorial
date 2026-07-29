@@ -310,4 +310,17 @@ Steps
 - echo "Create Main File" >> main.txt
 - git add .
 - git commit -m "Create Main File"
+- git branch
 - git checkout feature
+- echo "New Feature Update" >> feature.txt
+- git add .
+- git commit -m "New Feature Update"
+Note - changes occured on both branches
+- git checkout main
+- git merge feature
+- git log --oneline --graph
+
+- Octopus merge **
+- Subtree merge **
+- Squash and merge **
+- Ours merge **
