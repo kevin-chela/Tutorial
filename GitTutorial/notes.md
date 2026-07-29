@@ -35,6 +35,8 @@ Main Branch: The primary stable codebase, usually main or master.
 Feature Branches: For new features, e.g., feature-login.
 Bugfix Branches: For fixing bugs, e.g., bugfix-header.
 Release Branches: For preparing a version for production.
+Hotfix Branch: Used to quickly fix critical  production issues
+Develop Branch: Combines all completed features for intergration testing and ongoing development
 
 Review Linux Commands
  
@@ -174,3 +176,138 @@ Next Phase GitHooks
 mkdir -p GitHooks/hooks ?? -p
 usage of cat
 chmod +x GitTutorial/GitHooks/hooks/*
+
+Shell
+Script
+
+Patch - contains all difference between branches or commits
+
+History
+git log
+git log --oneline
+git log --stat
+git log -p
+git show <commitid>
+git show --stat <commitid>
+git shortlog
+git shortlog -n -s
+git log --author="name"
+git log -5 --oneline
+git log --merges
+git log --no-merges
+
+git commit --amend |-m "Update"| --no-edit - update last commit - no changes
+git rebase
+git rebase -i HEAD~3
+Interactive
+
+git add - move changes form working directory to staging area options -A -u .
+
+Git Debugging** - Review
+tools - git bisect
+
+Binary Search
+
+Error Search and Handling in Git                                  
+DevOps
+- Trouble shoot resolves issues and manage chnages effectively
+- Allows reverting correcting unwanted changes improve reliability and version control management
+
+git reset <filename/dirname> - unstage specific file
+git commit --amend <filename> - update last commit
+Edit the Most Recent Message
+git reset --mixed HEAD~ - remove unwanted files like personal data
+git reset --mixed <commit-id>
+Ignore local changes
+git checkout -- <filename/dirname>
+git reset --soft HEAD~1 - remove last commit keeping changes staged so that can be modified and committed again
+git reset --hard HEAD~n
+git reset --hard <commit-id>
+git reset --hard <branch-number-here> - return to an old project state
+git checkout -b <branch><sha-keypair> - recover a deleted local branch
+git checkout <old_branch_name> git branch -m <new_branch_name> - rename branch
+git rebase --interactive <commit-id> - rearrange commit history
+Handling mistakes within git hooks
+
+Git Advanced Usage
+1. Advanced Git Concepts
+- Git Branch
+- Handling hidden git files - .gitignore .gitattributes
+- Exporting projects
+- Codespaces ***
+
+HEAD pointer to the most recent commit in current branch
+HEAD^ Moves one commit backward
+HEAD~n Moves n commits backwards
+
+Git Pack
+- git fsck - detect corrupt files
+- git gc - optimizes and compresses repository data
+
+Large Repositories
+- shallow clone - fetching only latest n commits instead of entire history - git clone --depth [n] [url]
+- git filter - reduce repository size
+- cloning single branch
+- submodules
+- lfs
+- garbage collection (git gc)
+
+Error handling and troubleshooting
+- reset - rewrite history use it when not yet pushed vs revert - does not rewrite history use it after pusihing
+
+git reset -hard HEAD~2 - Completely wipes last 2 commits and all their changes — gone from history and working directory
+git revert HEAD^ - Safely undoes the last commit by creating a new commit that reverses it — history is preserved
+git reset HEAD~2 -  removes last 2 commits from history but keeps changes unstaged (by default soft)
+git checkout HEAD~2 - Detaches HEAD and takes you back to view how the repo looked 2 commits ago — nothing is changed. Get back by git checkout main. use it to look
+
+Personal Access Token
+
+Introduction BitBucket - Create Account
+Jira
+Mercurial
+SVN
+
+Git in CI/CD
+- Git - A local command-line software tool.
+- Jenkins - Tutorial ***
+- Github - A cloud-based web hosting service
+- . NET
+- CI / CD
+- Containerization
+- Devops
+- Docker
+- K8s
+
+Collaboration
+
+- openSource for beginners projects 
+1. https://up-for-grabs.net/#/
+
+- issues and bug tracking
+
+Merge strategies
+
+- Merge — preserves history but adds extra commits
+
+1. Fast Forward Merge Practical
+- occurs when target branch has changes and the main branch has no new commits
+Steps
+- main branch
+- git branch -> feature| main|testerbranch
+- checkout feature
+- touch fileA fileB
+- git status
+- git add .
+- git commit -m "Add Files"
+- ls
+- git checkout main
+- git rebase feature
+
+2. Recursive Merge
+- Both diverged branches have new commits hence two parent commits
+Steps
+- main branch
+- echo "Create Main File" >> main.txt
+- git add .
+- git commit -m "Create Main File"
+- git checkout feature
