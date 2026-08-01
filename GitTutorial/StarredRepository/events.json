@@ -1,0 +1,26 @@
+[
+  {
+    "name": "octo-project",
+    "description": "A playful CLI for tracking release notes and milestones.",
+    "language": "JavaScript",
+    "stargazers_count": 128,
+    "url": "https://github.com/example/octo-project",
+    "updated_at": "2026-07-28"
+  },
+  {
+    "name": "pixel-studio",
+    "description": "Design tokens and component color systems for modern UIs.",
+    "language": "TypeScript",
+    "stargazers_count": 96,
+    "url": "https://github.com/example/pixel-studio",
+    "updated_at": "2026-07-20"
+  },
+  {
+    "name": "ship-fast",
+    "description": "Templates and scripts to automate deployment workflows.",
+    "language": "Python",
+    "stargazers_count": 74,
+    "url": "https://github.com/example/ship-fast",
+    "updated_at": "2026-07-10"
+  }
+]
