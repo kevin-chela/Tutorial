@@ -1,14 +1,16 @@
-Notes
+Git Notes -> GeeksForGeeks
 
-Git Notes
 Git Commands
 git --help
 git help -a
-Git branch is to isolate your work from the main codebase so you can safely develop features, fix bugs, or experiment without breaking the working application
+
+Git branch - isolates your work from the main codebase so you can safely develop features, fix bugs, or experiment without breaking the working application
+
 Git Hosting Platforms
 1.Github - opensource project beginner
 2.GitLab - Built in CI/CD more private repo features
 3.Bitbucket - Great for teams intergrates with Jira
+
 CI/CD stands for Continuous Integration and Continuous Deployment
 Jira
 SHA-1 Hash
@@ -20,7 +22,8 @@ Release Branch
 VirtualBox - Linux
 
 Version Control Systems
-A server is a computer or software program that provides data, services, or resources to other computers, known as "clients," over a network.
+
+Server - computer or software program that provides data, services, or resources to other computers, known as "clients," over a network.
 
 Repository: A central location that stores all project files along with their complete change history and metadata like author and commit message. Storage space.
 Revision: A specific saved version of a file or project, identified using a unique ID such as a hash or number.
@@ -40,14 +43,13 @@ Develop Branch: Combines all completed features for intergration testing and ong
 
 Review Linux Commands
  
- git push -u origin master
+git push -u origin master
 
 gitignore - track unnecessary or sensitive  files *.log
 
 git rm --cached -r <file>
 
 Basic Structure of README.md
-A typical README.md may include the following sections:
 
 Project Title : The name of project, usually written as a main heading in Markdown to clearly identify the repository.
 Description: A short explanation of what the project does and its purpose.
@@ -60,10 +62,12 @@ Contact: Maintainer’s email or other contact information for support or querie
 Git: A distributed version control system used to track and manage code changes locally with features like branching and merging.
 GitHub: A web-based platform that hosts Git repositories and enables collaboration through pull requests, issues and team management.
 
-requests issues code reviews
+github - requests issues code reviews **
 
 virtual box - iso image - ubuntu - kali linux - GeeksForGeeks - setup GitServer on Ubuntu
 How to install git
+
+Terms
 
 refs - stores branch pointers and tags
 head - pointer to the current active branch
@@ -90,6 +94,7 @@ git branch -M main
 git push -u origin main
 
 moving file to a directory -  mv Features.png File2 References
+
 Pratical Git Branch
 
 Review Git stash - sticky notes
@@ -102,12 +107,12 @@ rm -fr ".git/rebase-merge"
 git checkout -b Test
 git push -u origin Test
 
-git branch -d Test Delete local branch
-git push origin --delete Test Delete remote branch
-git branch -r List remote branches
-git branchList local branches
+git branch -d Test -> Delete local branch
+git push origin --delete Test -> Delete remote branch
+git branch -r  -> List remote branches
+git branchList -> local branches
 
-branch allows developers to work on features bugs and experiments without affecting the main code base
+branch - allows developers to work on features bugs and experiments without affecting the main code base
 
 Best practice going forward:
 Always commit or stash before switching branches — keeps your changes tied to the right branch and avoids confusion.
@@ -141,7 +146,7 @@ git tracks only files not directories
 
 Terms
 Fast Forward Merge ???
-Squash
+Squash**
 
 git merge --abort
 
@@ -260,7 +265,7 @@ git revert HEAD^ - Safely undoes the last commit by creating a new commit that r
 git reset HEAD~2 -  removes last 2 commits from history but keeps changes unstaged (by default soft)
 git checkout HEAD~2 - Detaches HEAD and takes you back to view how the repo looked 2 commits ago — nothing is changed. Get back by git checkout main. use it to look
 
-Personal Access Token
+Personal Access Token - Github
 
 Introduction BitBucket - Create Account
 Jira
@@ -324,3 +329,136 @@ Note - changes occured on both branches
 - Subtree merge **
 - Squash and merge **
 - Ours merge **
+
+- Projects tab
+
+Git Notes -> GitDocs
+
+1. What is GitHub?
+
+- Github - platform for software building with  tools and workflows you need across every stage of the software development life cycle
+
+software development life cycle (SDLC)
+
+Stage	What you can do on GitHub
+Plan	Track your work, set milestones, and organize long-term projects.
+Create	Write and store code, develop new features safely, and create a clear timeline of your changes.
+Review	Suggest changes to your project, discuss your updates with reviewers, and apply feedback.
+Test	Automate checks to validate every change before it merges.
+Deploy	Ship software with automated deployment workflows and release management.
+Operate	Monitor applications, manage dependencies, and find and fix security issues.
+
+- Git is a version control system that tracks changes to files. It lets you work on your own copy of a project, record a history of your changes, and merge your work with other people's changes safely.
+
+Usage
+
+Store and manage code with version control.
+Write code, review code, manage security vulnerabilities and updates.
+Collaborate and socialize on projects.
+Contribute to open source software.
+Track and manage projects.
+Automate software development workflows like CI/CD, testing, and deployments.
+Showcase and share work.
+Publish and release software packages.
+Host documentation and websites.
+Participate in software development communities and discussions.
+Use AI-powered tools and agents to help write, understand, review, and automate code development faster
+
+How to start
+
+Create a repository for your software project and store the code on GitHub, see Creating a repository for your project on GitHub.
+Plan your work by creating issues and tracking your project work.
+Connect to your code on your local machine and use the GitHub Desktop application to manage code changes with Git.
+Write and store your code, optionally pair with an AI assistant, and sync your changes with GitHub.
+Review your proposed code changes by creating pull requests and reviewing your own changes before you merge.
+Deploy your website using automated deployment workflows, allowing you to publish a basic website for your software project.
+
+2. Creating a repository for your project on GitHub - create file index.html directly on github main branch
+
+Repository - storage to keep code and files for software projects
+Stash → pull → pop 
+
+3. Planning your work
+
+Creating an issue
+- Issues track ideas, tasks, and bugs for your software project.
+- click new issue
+- title - Display a list of starred repositories [Task]
+- description - Show a list of starred repositories on the home page
+
+Creating a project board and importing your issue
+- On GitHub, in the top right corner of GitHub, click your profile picture, then click Profile.
+- Click Projects.
+- Click New project.
+- Under Templates, select Board.
+- In the project name field, type Stargazers log.
+- Leave Import items from a repository checked, to import the issue you recently created to the board.
+- Click Create project.
+
+Moving work across the board
+- On your project board, find the Display a list of starred repositories item in the Todo column.
+- Drag the item into the In Progress column to show that you've started the work.
+- You'll return to the board later to move the item to Done once your feature is live.
+
+Adding follow up issues
+- Lets create more issues ideas| Features| Task
+  1. Add search feature to your website [Feature]
+  2. styling of starred repository [Idea]
+  3. Filtering of starred repositories [Task]
+- Add each new issue to your project board move to progress once you start working on it
+
+4. Connecting to your code locally
+- Installing GitHub Desktop
+- Cloning your repository
+- Opening your code in an editor
+
+5. Writing and storing your code
+-  Creating branch - add-starred-list - publish
+- Building the website's code
+- Open Copilot Chat in your editor and ask it to create the files with a prompt like the following.
+
+Text
+Create a starred repositories page for my software project. Add:
+- events.json with sample data for a few starred repositories
+- style.css to style a simple list
+- script.js to fetch events.json and render the list
+- an update to index.html that links style.css and script.js
+
+Use the code written in https://docs.github.com/get-started/start-your-journey/creating-and-changing-your-code.
+
+Committing and pushing your changes
+- squash and merge **
+- rebase and merge **
+
+Opening a pull request
+
+6. Reviewing your proposed changes
+- to catch bugs spot missing error handling and improve quality
+Reviewing your changes in the pull request
+
+Optional: Getting an AI second opinion
+
+Text
+Review my changes for bugs, missing error handling, and accessibility issues.
+
+The complete workflow
+
+- Planned the work with an issue and a project board.
+- Created a branch and built your feature.
+- Opened a pull request.
+- Reviewed your own changes (optionally with help from Copilot).
+- Merged your feature into main.
+- Updated your project board to reflect your progress.
+
+7. Deploying your website automatically
+- Automate your code deployment with GitHub Actions and GitHub Pages to publish updates to a live site with every push to the main branch.
+
+Enabling GitHub Pages
+- Repository -> Settings -> Code and Automation -> Pages -> Build and deployment -> GitHub Actions
+
+Creating a deployment workflow
+- create a file named .github/workflows/deploy.yml
+- add workflow content
+
+8. Git and GitHub learning resources
+- https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources

@@ -34,3 +34,5 @@ Index
     5. Git in CI/CD
 5. Git Deployment
 6. Git Collaboration
+
+Git Documentation: [Git Documentation](https://docs.github.com/)
