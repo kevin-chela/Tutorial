@@ -1,0 +1,23 @@
+[
+  {
+    "name": "GitHub Documentation",
+    "description": "Git Copilot | openSource Projects | Testing",
+    "language": "Git",
+    "url": "https://docs.github.com",
+  "updated_at": "time.now()"
+  },
+  {
+    "name": "DevOps Tutorial",
+    "description": "CICD Pipeline | Linux | Containerization",
+    "language": "Shell",
+    "url": "https://www.geeksforgeeks.org/devops/devops-tutorial/",
+    "updated_at": "time.now()"
+  },
+  {
+    "name": "Database Tutorial",
+    "description": "Oracle Database Administration",
+    "language": "SQL",
+    "url": "https://www.oracletutorial.com/",
+    "updated_at": "time.now()"
+  }
+]
