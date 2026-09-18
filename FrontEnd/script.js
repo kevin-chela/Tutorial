@@ -56,8 +56,9 @@ async function loadRepositories() {
             <p>${description}</p>
             <div class="repo-meta">
               <span>${language}</span>
-              <span>Updated ${updated}</span>
+              <span> ${updated}</span>
             </div>
+            <br />
             <p><a class="repo-link" href="${url}" target="_blank" rel="noopener noreferrer" aria-label="View ${name} (opens in a new tab)">View repository</a></p>
           </li>
         `;
