@@ -59,6 +59,7 @@ h1 {
 .repo-meta {
   display: flex;
   font-size: 0.95rem;
+  gap: 1rem;
 }
 
 .repo-link {
