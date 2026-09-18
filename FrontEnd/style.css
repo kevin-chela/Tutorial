@@ -58,8 +58,6 @@ h1 {
 
 .repo-meta {
   display: flex;
-  gap: 1rem;
-  color: #6b7280;
   font-size: 0.95rem;
 }
 
