@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Running post-receive hook..."
+
+while read oldrev newrev refname; do
+    BRANCH=$(echo "$refname" | sed 's/refs\/heads\///')
+    echo "Successfully received push on branch: $BRANCH"
+    echo "Notifying team..."
+fi
+done
+
+echo "Post-receive complete!"
+exit 0

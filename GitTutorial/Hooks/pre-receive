@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "Running pre-receive hook..."
+
+while read oldrev newrev refname; do
+    BRANCH=$(echo "$refname" | sed 's/refs\/heads\///')
+
+    # Block direct pushes to main
+    if [ "$BRANCH" = "main" ]; then
+        echo "ERROR: Direct push to main is not allowed"
+        echo "Please use a feature branch and pull request"
+        exit 1
+    fi
+done
+
+echo "Pre-receive passed!"
+exit 0
