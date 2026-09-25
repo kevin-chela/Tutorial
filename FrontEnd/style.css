@@ -57,7 +57,7 @@ h1 {
 }
 
 .repo-meta {
-  display: flex;
+  display: block;
   font-size: 0.95rem;
   gap: 1rem;
 }
